@@ -46,7 +46,7 @@ nav {
 .nav-links {
     display: flex;
     gap: 20px;
-    list-style: none;                       
+    list-style: none;                       /* para mawala yung bullet*/   
     padding-right: 10px;
 }
 
@@ -123,7 +123,7 @@ nav {
 .sidebar {
     position: sticky;
     top: var(--top);
-    height: calc(100vh - var(--top));
+    height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     background: var(--background);
@@ -146,7 +146,6 @@ nav {
 
 /* Side Bar (Photo) */
 .photo-wrap {
-    position: relative;
     width: 250px;
     border-radius: 14px;
     aspect-ratio: 1/1.1;
@@ -515,6 +514,7 @@ section {
     font-family: 'Outfit', sans-serif;
     font-size: 14px;
     padding: 18px 20px;
+    color: var(--text);
 
     background: var(--background);
     border: 1px solid var(--border);
