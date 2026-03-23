@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Forms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">SNDRW<span>.</span></div>
+        <div class="nav-links">
+            <a href="main-portfolio.html">Go to Portfolio</a>
+        </div>
+    </nav>
+    <div class="move-wrap">
+        <div class="move-anim">
+            <span class="move-item"><span class="move-dot"></span>Employee Registration</span>
+            <span class="move-item"><span class="move-dot"></span>Join the team</span>
+            <span class="move-item"><span class="move-dot"></span>Sndrw Portfolio</span>
+            <span class="move-item"><span class="move-dot"></span>Web Designer</span>
+            <span class="move-item"><span class="move-dot"></span>Open to Work</span>
+            <span class="move-item"><span class="move-dot"></span>Based in PH</span>
+            <!-- duplicate for seamless loop -->
+            <span class="move-item"><span class="move-dot"></span>Employee Registration</span>
+            <span class="move-item"><span class="move-dot"></span>Join the team</span>
+            <span class="move-item"><span class="move-dot"></span>Sndrw Portfolio</span>
+            <span class="move-item"><span class="move-dot"></span>Web Designer</span>
+            <span class="move-item"><span class="move-dot"></span>Open to Work</span>
+            <span class="move-item"><span class="move-dot"></span>Based in PH</span>
+        </div>
+    </div>
+    <div class="page">
+
+        <!-- HEADER -->
+        <div class="form-header">
+            <div class="section-header">
+                <h2 class="section-title">Employee Registration</h2>
+                <div class="section-line"></div>
+            </div>
+            <p class="section-subtitle"><span class="req-dot"></span>All fields are required unless stated otherwise</p>
+        </div>
+        <form action="">
+            <!-- Personal Information -->
+            <div class="card-container">
+                <div class="section-label">
+                    <i class="fa-solid fa-user"></i>Personal Information
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="row">
+                    <div class="field">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Juan" required>
+                    </div>
+                    <div class="field">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Dela Cruz" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field">
+                        <label>Date of Birth</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="field">
+                        <label>Phone Number</label>
+                        <input type="tel" size="15" maxlength="15" pattern="\d{4}-\d{3}-\d{4}" placeholder="0000-000-0000">
+                        <span class="field-hint">Please enter a valid phone number</span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Address</label>
+                    <input placeholder="Compound, Unit, Street, City, Province, Postal / Zip Code" required>
+                </div>
+
+                <div class="field">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="you@example.com" required>
+                    <span class="field-hint">example@example.com</span>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="section-label">
+                    <i class="fa-solid fa-briefcase"></i>Employment Details
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="field">
+                    <label>Applying Position</label>
+                    <input type="text" placeholder="e.g. Web Developer" required>
+                </div>
+
+                <div class="field">
+                    <label>Type of Work</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="work_type"> Full Time
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="work_type"> Part Time
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="work_type"> Contract
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="work_type"> Internship
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="section-label">
+                    <i class="fa-solid fa-globe"></i>Demographics
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="field">
+                    <span class="field-hint" style="color: #888; font-size: 12px;">Please select the option that describes your status best</span>
+                    <div class="radio-group">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="gender"> Male
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="gender"> Female
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="gender"> Prefer Not to Say
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="gender"> Others
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Disability</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="disablitiy"> Yes
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="disablitiy"> No
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Race</label>
+                    <select name="race">
+                        <option value="">Select race...</option>
+                        <option>American Native or Alaska Native</option>
+                        <option>Asian</option>
+                        <option>Black or African American</option>
+                        <option>Native Hawaiian</option>
+                        <option>Pacific Islander</option>
+                        <option>White</option>
+                        <option>Two or more races</option>
+                        <option>Decline to specify</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div> 
+
+            <div class="card-container">
+                <div class="section-label">
+                    <i class="fa-solid fa-file-arrow-up"></i> Resume
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="field">
+                    <label>Please Upload Resume</label>
+                    <div class="upload-zone">
+                        <input type="file" accept=".pdf,.doc,.docx" required>
+                        <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+                        <div class="upload-text">Drop your files here...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="section-label">
+                    <i class="fa-solid fa-pen-to-square"></i> Cover Letter
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="field">
+                    <label>Cover Letter or Additional Information <span class="optional">(Optional)</span></label>
+                    <textarea placeholder="Type here..."></textarea>
+                </div>
+            </div>
+            
+            <button class="button" type="submit">
+                <i class="fa-solid fa-paper-plane"></i>Submit Registration
+            </button>
+        </form>
+    </div>
+</body>
+</html>
